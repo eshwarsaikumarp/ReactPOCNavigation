@@ -1,0 +1,63 @@
+@import "../../lib/_variables.scss";
+@import "../../lib/_mixins.scss";
+
+#modalbar {
+  margin: 1%;
+  width: 98%;
+  color: #fff;
+  text-align: center;
+  height: 100%;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  font-size: 17px;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.okBtn {}
+
+.modal-container {
+  width: 36%;
+  margin: 15% auto;
+  background-color: #35b579;
+  padding: 10px;
+}
+
+.closeIcon {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 50%;
+  float: right;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  background: #35b579;
+}
+
+
+@include mq("mobileM") {
+  .modal-container {
+    width: 80%;
+  }
+}
+
+@include mq("iphone5") {
+  .modal-container {
+    width: 80%;
+  }
+}
+
+@include mq("phone") {
+  .modal-container {
+    width: 80%;
+  }
+}
+
+@include mq("tablet") {
+  .modal-container {
+    width: 80%;
+  }
+}

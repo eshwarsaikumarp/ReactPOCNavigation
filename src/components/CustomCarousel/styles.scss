@@ -1,0 +1,29 @@
+html,
+body,
+#container,
+.carousel {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+.image-slide {
+    width: 100%;
+    transition: background-image .3s ease-in-out;
+}
+
+.slide-arow {
+    color: #14B6D4;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+}
+
+.slide-arow.right {
+    right: 1rem;
+}
+
+.slide-arow.left {
+    left: 1rem;
+}
